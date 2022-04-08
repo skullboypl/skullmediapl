@@ -1,0 +1,186 @@
+ body {
+     background-color: #181818;
+ }
+
+ .center {
+     margin: auto;
+     top: 0;
+     left: 0;
+     right: 0;
+     bottom: 0;
+     position: absolute;
+ }
+
+ .item {
+     background-color: #445599;
+     width: 400px;
+     height: 400px;
+     border-radius: 100%;
+     position: relative;
+     overflow: hidden;
+ }
+
+ .item-1 {
+     background-color: #181818;
+     width: 300px;
+     height: 300px;
+     border-radius: 100%;
+     z-index: 99;
+     color: white;
+ }
+
+ .item-1:before {
+     content: 'SkullMedia.pl';
+     font-family: Montserrat;
+     font-weight: 800;
+     font-size: 25px;
+     display: block;
+     text-align: center;
+     line-height: 250px;
+     margin: auto;
+     top: 0;
+     left: 0;
+     right: 0;
+     bottom: 0;
+     position: absolute;
+ }
+
+ .item-1:after {
+     content: 'Wczytywanie';
+     font-family: Montserrat;
+     font-weight: 800;
+     font-size: 35px;
+     display: block;
+     text-align: center;
+     line-height: 350px;
+     margin: auto;
+     top: 0;
+     left: 0;
+     right: 0;
+     bottom: 0;
+     position: absolute;
+     animation: wczyt 1.75s linear infinite alternate;
+ }
+
+ @keyframes wczyt {
+     0% {
+         content: 'W';
+         opacity: 0;
+     }
+
+     7% {
+         content: 'W';
+         opacity: 1;
+     }
+
+     14% {
+         content: 'Wc';
+     }
+
+     21% {
+         content: 'Wcz';
+     }
+
+     28% {
+         content: 'Wczy';
+     }
+
+     35% {
+         content: 'Wczyt';
+     }
+
+     42% {
+         content: 'Wczyty';
+     }
+
+     49% {
+         content: 'Wczytyw';
+     }
+
+     56% {
+         content: 'Wczytywa';
+     }
+
+     63% {
+         content: 'Wczytywan';
+     }
+
+     70% {
+         content: 'Wczytywani';
+     }
+
+     77% {
+         content: 'Wczytywanie';
+     }
+
+     84% {
+         content: 'Wczytywanie.';
+     }
+
+     91% {
+         content: 'Wczytywanie..';
+     }
+
+     100% {
+         content: 'Wczytywanie...';
+     }
+
+ }
+
+ .item-2 {
+     background-color: #445599;
+     width: 400;
+     height: 400;
+     position: absolute;
+     margin: auto;
+     top: 0;
+     left: 0;
+     right: 0;
+     bottom: 0;
+     animation: load 4s infinite linear;
+
+ }
+
+ .item-3 {
+     background-color: #181818;
+     width: 400px;
+     height: 400px;
+     position: absolute;
+     margin: auto;
+     top: 0;
+     right: 50%;
+     bottom: 0;
+     animation: rightt 3s infinite linear;
+ }
+
+ @keyframes rightt {
+     0% {
+         right: 100%;
+     }
+
+     33% {
+         right: 50%;
+     }
+
+     66% {
+         right: 25%;
+     }
+
+     100% {
+         right: 100%;
+     }
+ }
+
+ @keyframes load {
+     0% {
+         transform: rotate(0deg);
+
+     }
+
+     50% {}
+
+     100% {
+         transform: rotate(360deg);
+
+     }
+ }
